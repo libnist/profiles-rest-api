@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     
     # Outsiders
     "rest_framework",
-    "rest_framework.authtoken",
+    # "rest_framework.authtoken",
     
     # Our Own
     "profiles_api",
@@ -130,3 +130,5 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTH_USER_MODEL = "profiles_api.UserProfile"
