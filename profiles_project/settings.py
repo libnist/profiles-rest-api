@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     
     # Outsiders
     "rest_framework",
-    # "rest_framework.authtoken",
+    "rest_framework.authtoken",
     
     # Our Own
     "profiles_api",
@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'profiles_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': str(BASE_DIR / 'db.sqlite3'),
     }
 }
 
